@@ -22,7 +22,7 @@ from pkg_resources import resource_listdir,resource_filename
 import numpy as np
 
 
-from PyQt4 import QtCore, QtGui
+from PyQt5 import QtCore, QtGui
 
 params = {
 'image' : 'sensors.png',

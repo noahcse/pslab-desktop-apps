@@ -16,12 +16,12 @@ all:  $(UIfiles)
 	#make -C docs html
 	#make -C docs/misc all
 	#@echo $(UI_SOURCES)
-	python setup.py build
+	python3 setup.py build
 
 
 ui_%.py: %.ui
 	@echo compiling UI : $@
-	@pyuic4 $< > $@
+	@pyuic5 $< > $@
 
 showUifiles:
 	@echo $(UIfiles) | tr " " "\n"
@@ -52,6 +52,6 @@ install:
 
 	#cp docs/misc/build/*.html $(DESTDIR)/usr/share/doc/pslab/html
 	# create ditributions for current python distribution
-	python setup.py install --install-layout=deb \
+	python3 setup.py install --install-layout=deb \
 	         --root=$(DESTDIR)/ --prefix=/usr
 	

@@ -6,7 +6,7 @@ import sip
 sip.setapi("QString", 2)
 sip.setapi("QVariant", 2)
 
-from PyQt4 import QtCore, QtGui
+from PyQt5 import QtCore, QtGui
 import pyqtgraph as pg
 from PSL_Apps.templates.widgets import ui_dial as dial,ui_button as button,ui_selectAndButton as selectAndButton,ui_sineWidget as sineWidget,ui_pwmWidget as pwmWidget,ui_supplyWidget as supplyWidget,ui_setStateList as setStateList,ui_sensorWidget as sensorWidget,ui_simpleButton as simpleButton, ui_dualButton as dualButton
 from PSL_Apps.templates.widgets import ui_spinBox as spinBox,ui_doubleSpinBox as doubleSpinBox,ui_dialAndDoubleSpin as dialAndDoubleSpin,ui_pulseCounter as pulseCounter,ui_voltWidget as voltWidget,ui_gainWidget as gainWidget,ui_gainWidgetCombined as gainWidgetCombined,ui_widebutton as widebutton,ui_displayWidget as displayWidget
