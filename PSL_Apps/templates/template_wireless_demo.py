@@ -76,7 +76,7 @@ class Ui_Form(object):
         self.paramMenus.addItem(spacerItem1)
         self.scrollArea_2.setWidget(self.scroll2layout)
         self.gridLayout.addWidget(self.scrollArea_2, 5, 0, 1, 1)
-        self.logs = QtWebKit.QWebView(Form)
+        self.logs = QtWebEngineWidgets.QWebEngineView() #QtWebKitWidgets.QWebView(Form)
         self.logs.setMaximumSize(QtCore.QSize(250, 150))
         self.logs.setUrl(QtCore.QUrl(_fromUtf8("about:blank")))
         self.logs.setObjectName(_fromUtf8("logs"))
@@ -92,4 +92,4 @@ class Ui_Form(object):
         self.pushButton.setText(QtGui.QApplication.translate("Form", "Refresh Node List", None, QtGui.QApplication.UnicodeUTF8))
         self.checkBox.setText(QtGui.QApplication.translate("Form", "Register New Nodes", None, QtGui.QApplication.UnicodeUTF8))
 
-from PyQt5 import QtWebKit
+from PyQt5 import QtWebEngineWidgets #QtWebKit

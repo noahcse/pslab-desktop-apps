@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 '''
 Use the MF522 RFID Reader via the SPI port.
 uses chip select 1

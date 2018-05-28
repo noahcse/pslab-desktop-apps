@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 '''
 Output Peripheral control for FOSSASIA PSLab - version 1.0.0.
 '''

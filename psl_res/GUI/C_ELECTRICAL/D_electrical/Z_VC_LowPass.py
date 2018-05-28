@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 '''
 Study Common Emitter Characteristics of NPN transistors.
 Saturation currents, and their dependence on base current 

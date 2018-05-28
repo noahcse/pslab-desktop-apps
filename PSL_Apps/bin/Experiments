@@ -1,4 +1,5 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
+
 '''
 Lists the various available experiments and allows users to run them
 '''
@@ -17,7 +18,7 @@ args = parser.parse_args()
 from PSL_Apps.utilitiesClass import utilitiesClass
 
 from PyQt5 import QtCore, QtGui
-from PyQt5 import QtWebKit
+from PyQt5 import QtWebEngineWidgets #QtWebKit
 
 try:
     _fromUtf8 = QtCore.QString.fromUtf8
@@ -163,7 +164,7 @@ class MyMainWindow(QtGui.QMainWindow, single_col_exp.Ui_MainWindow,utilitiesClas
 		self.menu_entries=[]
 		self.menu_group=None
 
-		self.helpView = QtWebKit.QWebView()
+		self.helpView = QtWebEngineWidgets.QWebEngineView() #QtWebKitWidgets.QWebView()
 		self.helpLayout.addWidget(self.helpView)
 		self.helpView.setUrl(QtCore.QUrl("../../docs/MD_HTML/index.html"))
 		#from PSL_Apps.utilityApps.indexGen import autogen

@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 '''
 This Utility allows auto-detection of wireless nodes in the vicinity, as well as the
 sensors connected to each. It can then be used to plot data acquired from sensors located 

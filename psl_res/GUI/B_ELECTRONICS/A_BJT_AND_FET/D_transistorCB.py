@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 '''
 Study NJFET
 Saturation currents, and their dependence on gate voltage 
